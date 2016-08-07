@@ -1,10 +1,10 @@
-FROM java
+FROM java:8
 
 MAINTAINER Andrij David <andrijdavid@xcentrik.online>
 
 CMD export HOSTIP=$(ip route show | grep eth0 | awk '{print $9}')
 
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get upgrade -y && apt-get install -y \
   ant \
   maven \
   git \
