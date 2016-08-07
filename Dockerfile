@@ -1,4 +1,4 @@
-FROM JAVA:8
+FROM java
 
 MAINTAINER Andrij David <andrijdavid@xcentrik.online>
 
